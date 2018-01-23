@@ -109,9 +109,11 @@ export default class Support extends Component {
         <Header hidden={ true } style={ 'defaultDark' } />
         <Container>
           <View style={styles.support}>
-            <Button style={styles.support__close} onPress={ this.props.onClose } testName="support__close">
-              <Img style={styles.support__close_icon} source="icon-back" />
-              <Text style={styles.support__close_title}>Settings</Text>
+            <Button onPress={ this.props.onClose } testName="support__close">
+              <View style={styles.support__close}>
+                <Img style={styles.support__close_icon} source="icon-back" />
+                <Text style={styles.support__close_title}>Settings</Text>
+              </View>
             </Button>
             <View style={styles.support__container}>
 
